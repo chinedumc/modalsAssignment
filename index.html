@@ -63,30 +63,43 @@
                             <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
                                 <div class="modal-dialog" role="document">
                                 <div class="modal-content">                            
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="images/modal.jpg" class="img-fluid" alt="modal-image">
+                                    <div class="row" id="modal-row">                                        
+                                        <div class="col-md-6" style="padding: 0;">
+                                            <img src="images/modal.jpg" class="hidden-xs" style="width: 100%; height: auto;"  alt="modal-image">
                                         </div>
                                         <div class="col-md-6 text-center details">
                                             <div>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="close" id="close">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="close">
                                                     <span aria-hidden="true">&times;</span>
-                                                </button><br>
+                                                </button>
                                             </div>
+                                            
                                             <div class="text-center detals" id="text-div">
-                                                <p>Welcome To</p>
-                                                <h3>VIOLET GREY</h3>
-                                                <p>THE INDUTRY'S BEAUTY EDIT</p>
-                                                <p>Subscribe to the latest industry news, product launches and tutorials.</p>
+                                                <p class="welcome-text">Welcome To</p>
+                                                <p id="violet-text">VIOLET GREY</p>
+                                                <p class="industry-text">THE INDUTRY'S BEAUTY EDIT</p>
+                                                <p class="subscribe-text">Subscribe to the latest industry news, product launches and tutorials.</p>
 
                                                 <div class="row">
-                                                    <div class="col-sm-3"></div>
-                                                    <div class="col-sm-6" class="form-group">
-                                                        <input type="text" class="text-center" class="form-control" placeholder="Enter Email Address">
-                                                        
+                                                    <div class="col-sm-1"></div>
+                                                    <div class="col-sm-10">
+                                                        <span class="form-wrapper">
+                                                            <input type="email" class="validate-email form-control" placeholder="Enter Email Address" maxlength="255">        
+                                                        </span>
                                                     </div>
-                                                    <div class="col-sm-3"> </div>
+                                                    <div class="col-sm-1"></div>
                                                 </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-4"></div>
+                                                    <div class="col-sm-4">
+                                                        <span>
+                                                        <input type="sumbit" class="btn btn-dark"         value="SUBSCRIBE">
+                                                        </span>       
+                                                    </div>
+                                                    <div class="col-sm-4"></div>
+                                                </div>
+
 
                                                 
 
